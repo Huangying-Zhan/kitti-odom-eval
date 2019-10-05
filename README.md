@@ -1,14 +1,22 @@
 # KITTI Odometry Evaluation Toolbox
 [KITTI Odometry benchmark](http://www.cvlibs.net/datasets/kitti/eval_odometry.php) contains 22 stereo sequences, in which 11 sequences are provided with ground truth. 
 
-### Evaluation metric
-`eval_odom.py` is the evaluation tool used for evaluating KITTI odometry result.
+
+The evaluation tool is used for evaluating KITTI odometry result.
 We include several common metrics in evaluating visual odometry, including
 * sub-sequence translation drift percentage
 * sub-sequence rotation error 
 * absolute trajectory error
 * relative pose error (translation)
 * relative pose error (rotation)
+
+### Requirement
+We recommend using [Anaconda](https://www.anaconda.com/distribution/) for installing the prerequisites.
+
+```
+conda create env -f requirement.yml -p kitti_eval # install prerequisites
+conda activate kitti_eval  # activate the environment [kitti_eval]
+```
 
 ### Result Format
 Before evaluation, estimated poses should be saved in a `.txt` file. 
@@ -74,3 +82,19 @@ Find a 6 DoF transformation, including translation and rotation that best align 
 
 #### 7dof
 Find a 6+1 DoF transformation, including translation, rotation, and scaling, that best align the predictions to the GT poses.
+
+### Licence
+The code is released under the permissive MIT license.
+
+If you use this toolbox, a footnote with the link to this toolbox is appreciated.
+
+You can also cite the the [DF-VO](https://github.com/Huangying-Zhan/DF-VO) which we release the toolbox in the first place.
+
+```
+@article{zhan2019dfvo,
+  title={Visual Odometry Revisited: What Should Be Learnt?},
+  author={Zhan, Huangying and Weerasekera, Chamara Saroj and Bian, Jiawang and Reid, Ian},
+  journal={arXiv preprint arXiv:1909.09803},
+  year={2019}
+}
+```
