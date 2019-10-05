@@ -473,11 +473,12 @@ class KittiEvalOdom():
         """
         ave_t_err, ave_r_err, ate, rpe_trans, rpe_rot = errs
         lines = []
-        lines.append("Sequence: \t\t\t\t\t\t {} \n".format(seq) )
-        lines.append("Translational error (%): \t\t {:.3f} \n".format(ave_t_err*100))
-        lines.append("Rotational error (deg/100m): \t {:.3f} \n".format(ave_r_err/np.pi*180*100))
-        lines.append("RPE (m): \t\t\t\t\t\t {:.3f} \n".format(rpe_trans))
-        lines.append("RPE (deg): \t\t\t\t\t\t {:.3f} \n\n".format(rpe_rot * 180 /np.pi))
+        lines.append("Sequence: \t {} \n".format(seq) )
+        lines.append("Trans. err. (%): \t {:.3f} \n".format(ave_t_err*100))
+        lines.append("Rot. err. (deg/100m): \t {:.3f} \n".format(ave_r_err/np.pi*180*100))
+        lines.append("ATE (m): \t {:.3f} \n".format(ate))
+        lines.append("RPE (m): \t {:.3f} \n".format(rpe_trans))
+        lines.append("RPE (deg): \t {:.3f} \n\n".format(rpe_rot * 180 /np.pi))
         for line in lines:
             f.writelines(line)
 

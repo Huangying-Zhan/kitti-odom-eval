@@ -83,7 +83,7 @@ Find a 6 DoF transformation, including translation and rotation that best align 
 #### 7dof
 Find a 6+1 DoF transformation, including translation, rotation, and scaling, that best align the predictions to the GT poses.
 
-### Licence
+### License
 The code is released under the permissive MIT license.
 
 If you use this toolbox, a footnote with the link to this toolbox is appreciated.
