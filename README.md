@@ -88,7 +88,7 @@ The code is released under the permissive MIT license.
 
 If you use this toolbox, a footnote with the link to this toolbox is appreciated.
 
-You can also cite the the [DF-VO](https://github.com/Huangying-Zhan/DF-VO) which we release the toolbox in the first place.
+You can also cite the [DF-VO](https://github.com/Huangying-Zhan/DF-VO) which we release the toolbox in the first place.
 
 ```
 @article{zhan2019dfvo,
