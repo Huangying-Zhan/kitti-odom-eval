@@ -54,5 +54,4 @@ dependencies:
   - wheel=0.33.6=py36_0
   - xz=5.2.4=h14c3975_4
   - zlib=1.2.11=h7b6447c_3
-prefix: /home/hyzhan/anaconda3/envs/kitti_eval
 
